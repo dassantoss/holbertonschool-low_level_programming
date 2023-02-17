@@ -1,6 +1,6 @@
 # C - Hello, World
 
-My first project in C for Holberton School - Novice level
+Holbertonschool Low Level Programming 
 
 ## Table of Contents
 
