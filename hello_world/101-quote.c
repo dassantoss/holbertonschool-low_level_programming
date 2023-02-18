@@ -6,8 +6,8 @@
  */
 int main(void)
 {
-	char quote1[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	char qte[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-	write(2, quote1, 59);
+	write(2, qte, 59);
 	return (1);
 }
