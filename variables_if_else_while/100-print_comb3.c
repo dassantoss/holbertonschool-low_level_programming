@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+* main - Entry point
+*
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
 	int digit1, digit2;
@@ -17,7 +17,7 @@ int main(void)
 			putchar(digit2 + '0');
 
 			if (digit1 != 8 || digit2 != 9)
-			{	
+	    		{
 				putchar(',');
 				putchar(' ');
 			}
@@ -25,6 +25,6 @@ int main(void)
 	}
 
 	putchar('\n');
-
+	
 	return (0);
 }
