@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
-* main - Entry point
+*main - Entry point
 *
-* Return: Always 0 (Success)
+*Return: Always 0 (Success)
 */
 int main(void)
 {
@@ -17,7 +17,7 @@ int main(void)
 			putchar(digit2 + '0');
 
 			if (digit1 != 8 || digit2 != 9)
-	    		{
+			{
 				putchar(',');
 				putchar(' ');
 			}
