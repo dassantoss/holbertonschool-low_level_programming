@@ -1,6 +1,6 @@
-# C - Variables, if, else, while
+# C - Functions, nested loops
 
-C - Variables, if, else, while - Novice level
+C - Functions, nested loops - Novice level
 
 ## Table of Contents
 
