@@ -1,11 +1,14 @@
 #include "main.h"
 
-/*
- *main - Prints _putcharr 
+/**
+ * main - Entry point of the program
  *
- *Description: Prints "_putchar", followed a new line
+ * Description:
+ *      This function is the entry point of the program. It prints the
+ *      characters '_putchar' to the standard output and returns 0 on success.
  *
- *Return: Always 0 (Success)
+ * Return:
+ *      Always 0 (Success)
  */
 int main(void)
 {
@@ -18,5 +21,6 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
+
 	return (0);
 }
