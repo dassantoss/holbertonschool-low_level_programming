@@ -1,6 +1,6 @@
 CC=gcc
 SRC=main.o school.c
-OBJ=$(SRC:%.o%.c)
+OBJ=$(SRC:%.c%.o)
 NAME=school
 RM=rm -f
 CFLAGS=-Wextra
