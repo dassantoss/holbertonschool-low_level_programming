@@ -1,4 +1,4 @@
-CC=gnn
+CC=gcc
 SRC=main.c school.c
 OBJ=$(SRC:%.c=%.o)
 NAME=school
