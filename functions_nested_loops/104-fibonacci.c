@@ -7,16 +7,16 @@
 */
 int main(void)
 {
-	unsigned int i, a = 1, b = 2, c;
+	int i;
+	unsigned long long int a = 1, b = 2, c;
 
-	printf("%u, %u", a, b);
-	for (i = 2; i < 98; i++)
+	printf("%llu, %llu", a, b);
+	for (i = 3; i <= 98; i++)
 	{
 		c = a + b;
-		printf(", %u", c);
+		printf(", %llu", c);
 		a = b;
 		b = c;
 	}
 	printf("\n");
-	return (0);
 }
