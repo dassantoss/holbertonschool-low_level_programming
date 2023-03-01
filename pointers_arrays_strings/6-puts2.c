@@ -16,5 +16,9 @@ void puts2(char *str)
 		_putchar(str[p]);
 		p += 2;
 	}
+	if (str[p] != '\0')
+	{
+		_putchar(str[p]);
+	}
 	_putchar('\n');
 }
