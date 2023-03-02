@@ -9,8 +9,8 @@
  */
 int _atoi(char *s)
 {
-	int res = 0;
-	int sign = 1;
+	unsigned int res = 0;
+	unsigned int sign = 1;
 
 	while (*s && (*s < '0' || *s > '9'))
 	{
