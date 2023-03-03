@@ -10,7 +10,7 @@
 char *cap_string(char *str)
 {
 	char *ptr = str;
-	int i, j, sep_words[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
+	int i, sep_words[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 	int sep_word_size = 13;
 
 	while (*ptr)
