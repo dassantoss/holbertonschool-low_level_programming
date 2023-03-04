@@ -50,10 +50,5 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	if (*(r) == '0')
 		return (r + 1);
 	else
-<<<<<<< HEAD
 		return (r);
 }
-=======
-	return (r);
-}
->>>>>>> d085d99f6b36237eb458ea17e859d0153253af5c
