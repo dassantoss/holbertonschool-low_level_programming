@@ -2,7 +2,7 @@
 
 /**
  * op_add - adds two numbers.
- * 
+ *
  * @a: first number.
  * @b: second number.
  *
