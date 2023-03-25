@@ -1,4 +1,4 @@
-# Structures, typedef
+# function pointers
 Project done during **Machine Learning** at **Holberton School**. It aims to learn about function pointers in **C language**.
 
 ## Technologies
