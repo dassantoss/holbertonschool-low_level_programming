@@ -1,6 +1,6 @@
 # C - Singly linked lists
 
-Project done during Machine Learning studies at Holberton School. It aims to learn about linked lists in C language.
+Project done during Machine Learning studies at Holberton School. It aims to learn about linked lists in C language..
 
 ## Objectives
 
