@@ -33,7 +33,7 @@ int exponential_search(int *array, size_t size, int value)
 }
 
 /**
- * binary_search_exponential - searches for a value in a sorted array of integers
+ * binary_search_exponential - searches for a value in a sorted array of int
  * using the Binary search algorithm (within a given range)
  *
  * @array: input array
