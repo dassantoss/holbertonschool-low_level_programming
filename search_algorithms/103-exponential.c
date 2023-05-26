@@ -1,5 +1,4 @@
 #include "search_algos.h"
-#include <stdio.h>
 
 /**
  * exponential_search - searches for a value in a sorted array of integers
@@ -16,7 +15,6 @@ int exponential_search(int *array, size_t size, int value)
 	size_t bound = 1;
 	size_t prev = 0;
 	size_t min_size;
-	size_t i;
 
 	if (array == NULL || size == 0)
 		return (-1);
@@ -35,7 +33,7 @@ int exponential_search(int *array, size_t size, int value)
 }
 
 /**
- * binary_search_exponential - searches for a value in a sorted array of int
+ * binary_search_exponential - searches for a value in a sorted array of integers
  * using the Binary search algorithm (within a given range)
  *
  * @array: input array
