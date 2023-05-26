@@ -20,4 +20,10 @@ int jump_search(int *array, size_t size, int value);
 /*searches for a value using the Interpolation search algorithm*/
 int interpolation_search(int *array, size_t size, int value);
 
+/*searches for a value in a sorted array of int using the Exponential search*/
+int exponential_search(int *array, size_t size, int value);
+
+/*searches for a value in a sorted array of integers using the Binary search*/
+int binary_search_exponential(int *array, size_t start, size_t end, int value);
+
 #endif
