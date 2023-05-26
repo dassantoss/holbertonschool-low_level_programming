@@ -26,4 +26,12 @@ int exponential_search(int *array, size_t size, int value);
 /*searches for a value in a sorted array of integers using the Binary search*/
 int binary_search_exponential(int *array, size_t start, size_t end, int value);
 
+/*Advanced binary search*/
+int advanced_binary(int *array, size_t size, int value);
+
+/*recursive function to perform advanced binary search*/
+int advanced_binary_recursive(int *array, size_t left, size_t right, int value);
+
+
+
 #endif
