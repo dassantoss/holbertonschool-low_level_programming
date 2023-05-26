@@ -17,4 +17,7 @@ void print_array(int *array, size_t start, size_t end);
 /*searches for a value in a sorted array of integers using the Jump search*/
 int jump_search(int *array, size_t size, int value);
 
+/*searches for a value using the Interpolation search algorithm*/
+int interpolation_search(int *array, size_t size, int value);
+
 #endif
