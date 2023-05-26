@@ -12,6 +12,22 @@ All of the following files are programs written in C:
 | Filename | Description |
 | -------- | ----------- |
 | `0-search_algos.h` | Header with prototypes and structures |
+| `0-linear` | Searchs using linear search |
+| `1-binary` | Searches using Binary search |
+| `2-O` | big O notation |
+| `3-O` | big O notation |
+| `4-O` | big O notation |
+| `5-O` | big O notation |
+| `6-O` | big O notation |
+| `100-jump.c` | searches using the Jump search |
+| `101-O` | big O notation |
+| `102-interpolation` | searches using the Interpolation search |
+| `103-exponential` | searches using the Exponential search |
+| `104-advanced_binary` | searches using the advanced binary search |
+| `105-jump_list` | searches using the Jump search algorithm |
+| `106-linear_skip` | searches for a value in a skip list |
+| `107-O` | big O notation |
+| `108-O` | big O notation |
 
 
 * Santiago Echeverri: [GitHub](https://github.com/dassantoss)
