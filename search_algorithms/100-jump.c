@@ -9,46 +9,57 @@
  *
  * Return: Index of the value if found, otherwise -1
  */
-int jump_search(int *array, size_t size, int value)
-{
-	size_t step = sqrt(size);
-	size_t prev = 0;
-	size_t curr = 0;
+	int jump_search(int *array, size_t size, int value)
+	{
+	unsigned int step = sqrt(size);
+	unsigned int left = 0;
+	unsigned int right = 0;
+	unsigned int i;
 
-	if (array == NULL)
+	if (array == NULL || size == 0)
 		return (-1);
 
-	if (array[0] == value)
+	while (left < size && array[left] <= value)
 	{
-		printf("Value checked array[0] = [%d]\n", array[0]);
-		return (0);
+		printf("Value checked array[%d] = [%d]\n", left, array[left]);
+		right = min(size - 1, left + step);
+		if (array[left] <= value && array[right] >= value)
+			break;
+		left += step;
 	}
-
-	while (curr < size && array[curr] < value)
+	if (value > array[right])
 	{
-		prev = curr;
-		curr += step;
-
-		if (prev >= size)
-			return (-1);
-
-		printf("Value checked array[%lu] = [%d]\n", curr, array[curr]);
+		printf("Value found between indexes [%d] and [%d]\n",
+				left - step, left);
+		printf("Value checked array[%d] = [%d]\n",
+				left - step, array[left - step]);
 	}
-
-	printf("Value found between indexes [%lu] and [%lu]\n", prev, curr);
-
-	while (prev < size && array[prev] < value)
+	else
+		printf("Value found between indexes [%d] and [%d]\n",
+				left, right);
+	if (left >= size || array[left] > value)
 	{
-		prev++;
-
-		if (prev == fmin(curr + 1, size))
-			return (-1);
-
-		printf("Value checked array[%lu] = [%d]\n", prev, array[prev]);
+		return (-1);
 	}
-
-	if (prev < size && array[prev] == value)
-		return (prev);
-
+	right = min(size - 1, right);
+	for (i = left; i <= right && array[i] <= value; i++)
+	{
+		printf("Value checked array[%d] = [%d]\n", i, array[i]);
+		if (array[i] == value)
+			return (i);
+	}
 	return (-1);
-}
+	}
+
+	/**
+	 * min - compare function
+	 * @a: first parameter to compare
+	 * @b: second parameter to compare
+	 *
+	 * Description: find smallest of the two values
+	 * Return: smaller value
+	 */
+	int min(int a, int b)
+	{
+	return (a < b ? a : b);
+	}
