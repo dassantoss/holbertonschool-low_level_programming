@@ -1,13 +1,15 @@
 #include "search_algos.h"
 
 /**
- * advanced_binary_recursive - recursive function to perform advanced binary search
+ * advanced_binary_recursive - recursive function to perform
+ * advanced binary search
  * @array: pointer to the first element of the array
  * @left: index of the leftmost element of the subarray
  * @right: index of the rightmost element of the subarray
  * @value: value to search for
  *
- * Return: index of the first occurrence of value in the array, or -1 if not found
+ * Return: index of the first occurrence of value in the array,
+ * or -1 if not found
  */
 int advanced_binary_recursive(int *array, size_t left, size_t right, int value)
 {
@@ -43,7 +45,8 @@ int advanced_binary_recursive(int *array, size_t left, size_t right, int value)
  * @size: number of elements in the array
  * @value: value to search for
  *
- * Return: index of the first occurrence of value in the array, or -1 if not found
+ * Return: index of the first occurrence of value in the array,
+ * or -1 if not found
  */
 int advanced_binary(int *array, size_t size, int value)
 {
